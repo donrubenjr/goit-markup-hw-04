@@ -5,6 +5,7 @@
   --CLOUD: #f4f4fd;
   --CORNFLOWER: #e7e9fc;
   --SLATE: #434455;
+  --LIGHT-SLATE: #8e8f99;
 }
 
 *,
@@ -282,6 +283,36 @@ p {
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+
+/* Customer Section */
+.customers {
+  background-color: var(--WHITE);
+  text-align: center;
+  padding: 120px 0px;
+
+  & h2 {
+    color: var(--NAVY-BLUE);
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0.72px;
+
+    padding-bottom: 72px;
+  }
+
+  .svg-icon-lists {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+
+    list-style: none;
+    border: 1px solid var(--LIGHT-SLATE);
+  }
+
+  .svg-icon-item {
+    border: 1px solid reds;
+  }
 }
 
 /*Footer Section */
