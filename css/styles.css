@@ -27,7 +27,8 @@ ul,
 li,
 h2,
 a,
-p {
+p,
+svg {
   margin: 0;
 }
 
@@ -130,6 +131,7 @@ p {
   background-image: url(../images/people-office\ 1.jpg);
   background-color: var(--NAVY-BLUE);
   background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
   background-blend-mode: soft-light;
 
@@ -288,30 +290,49 @@ p {
 /* Customer Section */
 .customers {
   background-color: var(--WHITE);
-  text-align: center;
-  padding: 120px 0px;
 
   & h2 {
     color: var(--NAVY-BLUE);
     font-size: 36px;
     font-weight: 700;
+
     line-height: 40px;
     letter-spacing: 0.72px;
+    text-align: center;
 
-    padding-bottom: 72px;
+    margin: 120px auto 72px;
   }
 
   .svg-icon-lists {
+    padding: 0px; /*removing the default padding*/
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 24px;
 
+    margin: 0px auto 120px;
     list-style: none;
+  }
+
+  .svg-icon-item svg {
+    padding: 16px 32px;
+    width: 168px;
+    height: 88px;
+
+    border-radius: 4px;
     border: 1px solid var(--LIGHT-SLATE);
   }
 
-  .svg-icon-item {
-    border: 1px solid reds;
+  .svg-icon-anchor svg {
+    fill: var(--LIGHT-SLATE);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .svg-icon-anchor:hover {
+    color: var(--IRIS);
   }
 }
 
