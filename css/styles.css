@@ -167,6 +167,21 @@ svg {
 }
 
 /* Section Article */
+.section-article .article-unorder-list svg {
+  fill: var(--LIGHT-SLATE);
+
+  width: 264px;
+  height: 112px;
+
+  background-color: var(--CLOUD);
+  border-radius: 4px;
+  border: 0px;
+}
+
+.section-article .article-unorder-list svg:hover {
+  fill: orange;
+}
+
 .section-article ul {
   margin-left: 156px;
   margin-right: 156px;
@@ -331,8 +346,8 @@ svg {
     align-items: center;
   }
 
-  .svg-icon-anchor:hover {
-    color: var(--IRIS);
+  .svg-icon-anchor svg:hover {
+    fill: orange;
   }
 }
 
