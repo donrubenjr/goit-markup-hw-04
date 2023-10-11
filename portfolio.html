@@ -1,52 +1,62 @@
 <!DOCTYPE html>
+<head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap" rel="stylesheet" />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet" />
+      <link rel="stylesheet" href="./css/styles.css" />
+</head>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="#" />
-    <title>Portfolio</title>
-  </head>
 
-  <body>
-    <!-- Header Section -->
-    <header>
-      <!-- Navigation Bar -->
-      <nav>
-        <a class="menu-logo" href="#webstudio"><span>WEB</span>STUDIO</a>
+<!-- Header Section -->
+<header class="container header-container">
+  <!-- Navigation Bar -->
+  <nav class="nav-container">
+    <div class="div-logo-container">
+      <a class="nav-container logo" href="#webstudio"><span>Web</span>Studio
+      </a>
+    </div>
 
-        <ul class="header-menu">
-          <li>
-            <a class="header-menu-link" href="#studio">Studio</a>
-          </li>
-          <li>
-            <a class="header-menu-link" href="#portfolio">Portfolio</a>
-          </li>
-          <li>
-            <a class="header-menu-link" href="#contacts">Contacts</a>
-          </li>
-        </ul>
-      </nav>
-
-      <ul class="contact-menu">
-        <li>
-          <a class="contact-menu-link" href="mailto:info@devstudio"
-            >info@devstudio.com</a
-          >
+    <div class="div-header-menu">
+      <ul class="nav-container header-menu">
+        <li class="header-menu-list">
+          <a class="header-menu-link" href="#studio"><span>Studio</span></a>
         </li>
-        <li>
-          <a class="contact-menu-link" href="tel:+11(000)1111111"
-            >+11 (000) 111-11-11</a
-          >
+        <li class="header-menu-list">
+          <a class="header-menu-link" href="#portfolio">Portfolio</a>
+        </li>
+        <li class="header-menu-list">
+          <a class="header-menu-link" href="#contacts">Contacts</a>
         </li>
       </ul>
-    </header>
+    </div>
+  </nav>
 
+  <div class="div-contact-menu">
+    <ul class="contact-menu">
+      <li class="contact-menu-list">
+        <a class="contact-menu-link" href="mailto:info@devstudio">info@devstudio.com</a>
+      </li>
+      <li class="contact-menu-list">
+        <a class="contact-menu-link" href="tel:+11(000)1111111">+11 (000) 111-11-11</a>
+      </li>
+    </ul>
+  </div>
+</header>
+
+<body>
     <main>
-      <h3>All</h3>
-      <h3>Web Site</h3>
-      <h3>App</h3>
-      <h3>Design</h3>
-      <h3>Marketing</h3>
+      <button>All</button>
+      <button>Web Site</button>
+      <button>App</button>
+      <button>Design</button>
+      <button>Marketing</button>
 
       <!-- Row 1 -->
       <section class="rows">
@@ -123,9 +133,13 @@
     </main>
 
     <!-- Footer section -->
-    <footer>
-      <a class="menu-logo" href="#webstudio"><span>WEB</span>STUDIO</a>
-      <p>
+    <!-- Footer section -->
+    <footer class="container footer-container">
+      <div class="logo-container">
+        <a class="logo" href="#webstudio"> <span>Web</span>Studio </a>
+      </div>
+    
+      <p class="text">
         Increase the flow of customers and <br />
         sales for your business with digital <br />
         marketing & growth solutions.
