@@ -6,7 +6,7 @@
   --CORNFLOWER: #e7e9fc;
   --SLATE: #434455;
   --LIGHT-SLATE: #8e8f99;
-  --OCEAN: #404BBF;
+  --OCEAN: #404bbf;
 }
 
 *,
@@ -27,6 +27,7 @@ nav,
 ul,
 li,
 h2,
+h3,
 a,
 p,
 svg {
@@ -122,6 +123,7 @@ svg {
   letter-spacing: 0.32px;
 }
 
+/* <index.html> */
 /* Hero Section */
 .hero-section {
   padding-top: 188px;
@@ -166,10 +168,8 @@ svg {
     letter-spacing: 0.64px;
   }
 }
-/* <index.html> Body Container*/
 
 /* Section Article */
-
 .section-article ul {
   margin-left: 156px;
   margin-right: 156px;
@@ -301,7 +301,6 @@ svg {
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.32px;
-  padding-bottom: 32px;
 }
 
 .section-team li {
@@ -316,12 +315,29 @@ svg {
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
-.svg-icons-container .svg-icon-div {
-  display: inline-block;
-  justify-content: space-between;
+.svg-icons-container {
+  display: flex;
+  justify-content: center;
   align-items: center;
+  gap: 24px;
+
+  margin: 8px auto 32px;
+}
+
+.svg-icons-container .svg-icon-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 50%;
+
+  width: 40px;
+  height: 40px;
+  background: var(--OCEAN);
 }
 .svg-icons-container .svg-icon-div .svg-icon-anchor {
+  fill: var(--CLOUD);
+
   width: 16px;
   height: 16px;
 
@@ -348,7 +364,7 @@ svg {
   }
 
   .svg-icon-lists {
-    padding: 0px; /*removing the default padding*/
+    padding: 0px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -382,14 +398,14 @@ svg {
 
 /* <porfolio.html> */
 /* Button Container */
-.port-btn{
+.port-btn {
   display: flex;
   justify-content: center;
   gap: 16px;
 
   margin: 96px auto 72px;
 
-  .port-btn-label{
+  .port-btn-label {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -397,8 +413,7 @@ svg {
 
     color: var(--IRIS);
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
-      0px 2px 1px 0px rgba(0, 0, 0, 0.08),
-      0px 3px 1px 0px rgba(0, 0, 0, 0.10);
+      0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 
     background: var(--CLOUD);
     border-radius: 4px;
@@ -410,42 +425,33 @@ svg {
     letter-spacing: 0.64px;
   }
 
-  .port-btn-label:hover{
+  .port-btn-label:hover {
     color: var(--WHITE);
     background: var(--OCEAN);
     box-shadow: var(--OCEAN);
   }
-
 }
 
 /* Section Containers */
-.port-rows{
+.port-rows {
   display: flex;
   justify-content: center;
   align-items: center;
 
-    
-  /* border: 1px solid black; */
-
-  & ul{
+  & ul {
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 24px;
-    
 
     list-style: none;
-
-    /* border: 1px solid red; */
   }
 
-  & li .paragraph{
-    margin: 32px 0; 
+  & li .paragraph {
+    margin: 32px 0;
 
-    row-gap: 48;
-   
-    .project-name{
+    .project-name {
       color: var(--NAVY-BLUE);
       font-family: Roboto;
       font-size: 20px;
@@ -454,30 +460,35 @@ svg {
       letter-spacing: 0.4px;
     }
 
-    .group-name{
+    .group-name {
       color: var(--SLATE);
       font-family: inherit;
       font-weight: 400;
       line-height: 24px;
       letter-spacing: 0.32px;
-
     }
   }
 
   .paragraph {
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
-    /* align-items: flex-start; */
+    justify-content: center;
+    align-items: flex-start;
     align-self: stretch;
     gap: 8px;
     padding: 0px 16px;
-    
   }
 
   .port-card-list {
     margin-bottom: 48px;
     border: 1px solid var(--CORNFLOWER);
+  }
+
+  .port-card-list:hover {
+    border: 1px solid var(--CLOUD);
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+      0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+      0px 1px 6px 0px rgba(46, 47, 66, 0.08);
   }
 }
 
@@ -499,12 +510,19 @@ footer {
 
   .text {
     color: var(--WHITE);
-    margin-left: 156px;
 
     font-family: Roboto;
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0.32px;
+  }
+
+  .container-logo-text {
+    margin: 101.5px 0px 120px 156px;
+  }
+
+  .text {
+    margin-top: 16px;
   }
 
   .logo,
@@ -513,8 +531,33 @@ footer {
   }
 }
 
-.logo-container {
-  padding-top: 102px;
-  padding-bottom: 16px;
-  margin-left: 156px;
+.footer-container {
+  display: flex;
+}
+
+.container-text-icons {
+  display: inline;
+  align-items: start;
+
+  margin: 100px 0px 132px 120px;
+}
+
+.social-media {
+  color: var(--WHITE);
+  font-family: Roboto;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.32px;
+
+  margin: 0;
+  padding: 0;
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+
+  margin-top: 16px;
+  padding: 0;
 }
