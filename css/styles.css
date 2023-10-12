@@ -6,6 +6,7 @@
   --CORNFLOWER: #e7e9fc;
   --SLATE: #434455;
   --LIGHT-SLATE: #8e8f99;
+  --OCEAN: #404BBF;
 }
 
 *,
@@ -165,6 +166,7 @@ svg {
     letter-spacing: 0.64px;
   }
 }
+/* <index.html> Body Container*/
 
 /* Section Article */
 
@@ -376,6 +378,63 @@ svg {
   .svg-icon-anchor svg:hover {
     fill: var(--IRIS);
   }
+}
+
+/* <porfolio.html> Body Container */
+.port-btn{
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+
+  margin: 96px auto 72px;
+
+  .port-btn-label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 24px;
+
+    color: var(--IRIS);
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+      0px 2px 1px 0px rgba(0, 0, 0, 0.08),
+      0px 3px 1px 0px rgba(0, 0, 0, 0.10);
+
+    background: var(--CLOUD);
+    border-radius: 4px;
+    border: 1px solid var(--CORNFLOWER);
+
+    font-family: Roboto;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.64px;
+  }
+
+  .port-btn-label:hover{
+    color: var(--WHITE);
+    background: var(--OCEAN);
+  }
+
+}
+
+.port-rows{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  border: 1px solid black;
+
+  & ul{
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+
+    list-style: none;
+
+    border: 1px solid red;
+  }
+  
 }
 
 /*Footer Section */
